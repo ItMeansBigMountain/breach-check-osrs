@@ -1,5 +1,6 @@
+``` markdown
 honestly if you found this useful then id love a donation on osrs or you can buy me a coffee [here](buymeacoffee.com/affanfareev)
-
+```
 ----
 
 <!-- Below is a **clean, submission-quality README.md** that:
@@ -22,11 +23,13 @@ You can copy-paste this entirely into `README.md`.
 
 Displays Deadman Mode breach countdowns and schedules for both seasonal and permanent Deadman worlds.
 
+Just type `!breach` to find out when the next breach is!
+
 ---
 
 ## Features
 
-- Supports **Seasonal Deadman** breach schedule  
+<!-- - Supports **Seasonal Deadman** breach schedule  
   - 02:00 UTC  
   - 10:00 UTC  
   - 19:00 UTC  
@@ -195,4 +198,4 @@ If you want, next we can:
 - Or prepare your PR description text
 
 You’re extremely close to being published.
-```
+``` -->
