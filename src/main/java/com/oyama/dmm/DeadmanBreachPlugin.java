@@ -128,14 +128,7 @@ public class DeadmanBreachPlugin extends Plugin
             }
         }
 
-        if (!config.enableCommand())
-            return;
 
-        if (event.getMessage().equalsIgnoreCase("!breach"))
-        {
-            event.getMessageNode().setRuneLiteFormatMessage("");
-            sendTimeRemaining();
-        }
     }
 
     @Subscribe
@@ -249,20 +242,6 @@ public class DeadmanBreachPlugin extends Plugin
         }
     }
 
-    private void sendTimeRemaining()
-    {
-        if (nextBreachTime == null)
-            return;
-
-        Duration remaining = Duration.between(Instant.now(), nextBreachTime);
-
-        long h = remaining.toHours();
-        long m = remaining.minusHours(h).toMinutes();
-        long s = remaining.minusHours(h).minusMinutes(m).getSeconds();
-
-        client.addChatMessage(ChatMessageType.GAMEMESSAGE, "",
-                String.format("Next breach in: %dh %dm %ds", h, m, s), null);
-    }
 
     public Instant getNextBreachTime()
     {

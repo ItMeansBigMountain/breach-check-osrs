@@ -17,21 +17,10 @@ public interface DeadmanBreachConfig extends Config
     }
 
     @ConfigItem(
-            keyName = "enableCommand",
-            name = "Enable !breach command",
-            description = "Allows players to type !breach to see time remaining",
-            position = 1
-    )
-    default boolean enableCommand()
-    {
-        return true;
-    }
-
-    @ConfigItem(
             keyName = "showOverlay",
             name = "Show countdown overlay",
             description = "Displays time remaining to next breach on screen",
-            position = 2
+            position = 1
     )
     default boolean showOverlay()
     {
@@ -42,7 +31,7 @@ public interface DeadmanBreachConfig extends Config
             keyName = "enableNotification",
             name = "5-minute notification",
             description = "Sends a desktop notification 5 minutes before breach",
-            position = 3
+            position = 2
     )
     default boolean enableNotification()
     {

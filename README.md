@@ -12,7 +12,7 @@ notification during the supported seasonal window.
 - Shows the next breach countdown in an overlay.
 - Converts the UTC schedule to the computer's local timezone.
 - Synchronizes the countdown from RuneScape's in-game breach message.
-- Supports a local `!breach` command and an optional five-minute notification.
+- Supports an optional five-minute notification.
 
 ## Privacy and network usage
 
